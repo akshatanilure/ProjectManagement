@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f0e3;
+  }
+  
+  header {
+    background-color: #8b0000;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: white;
+    color: #8b0007;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
