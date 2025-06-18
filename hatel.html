@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Welcome to Our Hotel</h1>
+        <p>Your comfort is our priority</p>
+    </header>
+
+    <!-- Room Listings -->
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="room1.jpg" alt="Single Room">
+            <h3>Single Room</h3>
+            <p>Comfortable single bed with all amenities.</p>
+            <button>Book Now</button>
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Double Room">
+            <h3>Double Room</h3>
+            <p>Spacious room with a king-size bed.</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+            </select>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@hotel.com">info@hotel.com</a></p>
+        <p>&copy; 2025 Hotel Management System</p>
+    </footer>
+</body>
+</html>
