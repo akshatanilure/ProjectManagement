@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple form
+        </title>
+    </head>
+    <body>
+        <div>
+            <h3>
+                Here is a list of flower: select your favorite ones
+            </h3>
+            <form id="favflower">
+                <input type="checkbox" name="flowers" value="Rose"/>Rose
+                <input type="checkbox" name="flowers" value="Tulip"/>Tulip
+                <input type="checkbox" name="flowers" value="Lotus"/>Lotus
+                <input type="checkbox" name="flowers" value="Sunflower"/>Sunflower
+                <input type="checkbox" name="flowers" value="Jasmine"/>Jasmine
+                <input type="button" value="submit" onclick="myFunction()" id="btn"/>   
+            </form>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div>
+            <p id="para"></p>
+        </div>
+        <script>
+            let str="Your fav flowers are";
+            let fav=[];
+
+            function myFunction(event){
+                let nodes=document.querySelectorAll('input[name="flowers"]:checked');
+                nodes.forEach((checkbox)=>{
+                    if(checkbox.checked)
+                        fav.push(checkbox.value);
+                }); 
+                //syntax of arrow function:(parameters)=>{function body;} 
+                document.getElementById('para').innerHTML=str+fav;
+            }
+        </script>
+    </body>
+</html>
