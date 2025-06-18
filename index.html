@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handmade Sarees</title>
+  <link rel="stylesheet" href="saree.css">
+</head>
+<body>
+  <header>
+    <h1>Handmade Sarees</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="categories">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Cotton</a></li>
+        <li><a href="#">Silk</a></li>
+        <li><a href="#">Georgette</a></li>
+      </ul>
+    </section>
+
+    <section id="products">
+      <h2>Featured Sarees</h2>
+      <div class="product" data-id="1">
+        <img src="saree1.jpg" alt="Cotton Saree">
+        <p>Cotton Saree</p>
+        <button onclick="addToCart(1, 'Cotton Saree', 1500)">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2">
+        <img src="saree2.jpg" alt="Silk Saree">
+        <p>Silk Saree</p>
+        <button onclick="addToCart(2, 'Silk Saree', 2500)">Add to Cart</button>
+      </div>
+      <!-- Add more products as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Handmade Sarees</p>
+  </footer>
+
+  <script src="saree.js"></script>
+</body>
+</html>
