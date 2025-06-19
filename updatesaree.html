@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handmade Saree Store</title>
+  <link rel="stylesheet" href="updatesaree.css">
+</head>
+<body>
+  <header>
+    <h1>Handmade Saree Store</h1>
+    <nav>
+      <button onclick="toggleSection('signup')">Sign Up</button>
+      <button onclick="toggleSection('login')">Login</button>
+      <button onclick="toggleSection('shop')" id="shop-btn" class="hidden">Shop Sarees</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sign Up Section -->
+    <section id="signup" class="section">
+      <h2>Create Account</h2>
+      <form id="signup-form">
+        <label for="new-username">Username</label>
+        <input type="text" id="new-username" required>
+        <label for="new-password">Password</label>
+        <input type="password" id="new-password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="signup-msg"></p>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="section hidden">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-msg"></p>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="section hidden">
+      <h2>Browse Sarees</h2>
+      <div id="categories">
+        <button onclick="filterCategory('Cotton')">Cotton</button>
+        <button onclick="filterCategory('Silk')">Silk</button>
+        <button onclick="filterCategory('Linen')">Linen</button>
+      </div>
+      <div id="products"></div>
+    </section>
+  </main>
+
+  <script src="updatesaree.js"></script>
+</body>
+</html>
